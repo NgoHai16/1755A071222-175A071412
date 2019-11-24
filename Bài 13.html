@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo form và các điều khiển </title>
+</head>
+<body>
+        <form action="" id="dangki">
+                <table border="2" width=700 style="border-collapse: collapse;background-color: rgb(17, 228, 129);"cellpadding=5 bordercolor=#CC0033 align=center >
+                    <tr>
+                        <td>Họ tên </td>
+                        <td><input type="text" id="hoten" size="15"> </td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ </td>
+                        <td> <input type="text" id="diachi" size="15"></td>
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại </td>
+                        <td><input type="text" id="sdt" size="15"> </td>
+                    </tr>
+                    <tr>
+                        <td>Khách Việt Nam </td>
+                        <td><input type="checkbox" id="khachVN"  checked >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chọn tua </td>
+                        <td>
+                            <select  id="Chontua">
+                                <optgroup label="Miền Bắc">
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Bắc Giang">Bắc Giang</option>
+                                    <option value="SaPa">SaPa</option>
+                                </optgroup>
+                                <optgroup label="Miền Trung">
+                                    <option value="Nghệ An">Nghệ An</option>
+                                    <option value="Nghệ Tĩnh">Nghệ Tĩnh</option>
+                                    <option value="Thanh Hóa">Thanh Hóa</option>
+                                </optgroup>
+                                <optgroup label="Miền Nam">
+                                    <option value="Sài Gòn">Sài Gòn</option>
+                                    <option value="Cần Thơ">Cần Thơ</option>
+                                    <option value="Tây Nguyên">Tây Nguyên</option>
+                                </optgroup>
+ 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phương tiện </td>
+                        <td>
+                            <input type="radio" name="gender" id="phuongtien1">Xe Máy
+                            <input type="radio" name="gender" id="phuongtien2">Ô tô
+                        </td>
+                    </tr>
+                    <tr >    
+                        <td colspan="2" align="center">
+                            <fieldset style="border: solid; width:350px; height:55px" >
+                                <legend style="font-style: oblique;color: red;text-align: left;">
+                                        Số lượng đòan khách
+                                </legend>
+                              Người lớn  <input type="text" name="" id="nguoilon" size="5"> Trẻ em <input type="text" name="" id="treem" size="5">
+                            </fieldset> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ghi chú thêm
+                        </td>
+                        <td>
+                            <textarea name="" id="ghichu" style="width: 300px;height: 50px;">
+
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td colspan="2"> <input type="button" id="button" value="Đồng ý" onclick="ocl()" style="background-color: red;"></td>
+                        
+                    </tr>
+                    <tr >
+                        <td colspan="2" >
+                            <div id="thongbao" align=center >
+        
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    <script>
+                            function ocl()
+                                {     
+                                    document.getElementById("thongbao").innerText = "Bạn đã đăng ký thành công!!!!" ;
+                                    document.getElementById("thongbao").style.color="Purple";
+                                }
+                        </script>
+                </table>
+            </form>
+</body>
+</html>
